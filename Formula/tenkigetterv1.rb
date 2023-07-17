@@ -16,6 +16,6 @@ class Tenkigetterv1 < Formula
   end
 
   test do
-    system bin/"tenkiGetter", "--version"
+    system "bin/tenkiGetter", "--version"
   end
 end
