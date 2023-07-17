@@ -8,11 +8,11 @@ class Tenkigetterv1 < Formula
   # depends_on "cmake" => :build
 
   def install
-    bin.install ”tenkiGetter"
+    bin.install "tenkiGetter"
     bash_completion.install "completions/bash/tenkiGetter" if build.with? "completions"
   end
 
   test do
-    system bin/”tenkiGetter", "--version"
+    system bin/"tenkiGetter", "--version"
   end
 end
