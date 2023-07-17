@@ -5,10 +5,9 @@ class Tenkigetterv1 < Formula
   sha256 "99ec9b9ffe2c1706fa48c25e8bf44eec3b570667e599bdb5dc79b5f48dc6cef4"
   license "MIT"
 
-  # depends_on "cmake" => :build
 
   def install
-    bin.install "tenkiGetter"
+    bin.install "tenkiGetter",
     bash_completion.install "completions/bash/tenkiGetter" if build.with? "completions"
   end
 
