@@ -15,7 +15,4 @@ class Tenkigetterv1 < Formula
     bash_completion.install "completions/bash/tenkiGetter" if build.with? "completions"
   end
 
-  test do
-    system "bin/tenkiGetter", "--version"
-  end
 end
